@@ -35,6 +35,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Projeto Férias - Login");
+        setBackground(new java.awt.Color(0, 255, 255));
         setResizable(false);
 
         jLabel1.setText("Usuário");
