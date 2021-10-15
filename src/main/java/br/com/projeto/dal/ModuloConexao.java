@@ -13,9 +13,7 @@ import java.sql.*;
  */
 public class ModuloConexao {
     
-    private static ModuloConexao instancia;
-    
-    private ModuloConexao(){
+    public static Connection conector(){
         java.sql.Connection conexao = null;
         //iniciar o driver
         String driver = "com.mysql.jdbc.Driver";
@@ -24,20 +22,12 @@ public class ModuloConexao {
         String user = "root";
         String password = "";
         //conexao com  o banco
-        
-    }
-    
-    public static synchronized ModuloConexao getInstance(){
-        if (instancia == null){
-            instancia = new ModuloConexao();
+        try{
+            Class.forName(driver);
+            conexao = DriverManager.getConnection(url, user, password);
+            return conexao;
+        }catch(Exception e){
+            return null;
         }
-        return instancia;
-    }
-    
-    public void conectar(){
-        System.out.print("conectado");
-    }
-    public void desconectar(){
-        
     }
 }
