@@ -5,17 +5,26 @@
  */
 package br.com.projeto.telas;
 
+import java.sql.*;
+import br.com.projeto.dal.ModuloConexao;
 /**
  *
  * @author gui
  */
 public class TelaLogin extends javax.swing.JFrame {
-
+    Connection conexao = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;        
+       
+    
+    
     /**
      * Creates new form TelaLogin
      */
     public TelaLogin() {
         initComponents();
+        conexao = ModuloConexao.conector();
+        System.out.println(conexao);
     }
 
     /**
