@@ -16,9 +16,9 @@ public class ModuloConexao {
     public static Connection conector(){
         java.sql.Connection conexao = null;
         //iniciar o driver
-        String driver = "com.mysql.jdbc.Driver";
+        String driver = "com.mysql.cj.jdbc.Driver";
         //nome, usuario, seha, ip...
-        String url = "jdbc:mysql://localhost:3306/dbprojetoferias";
+        String url = "jdbc:mysql://ProjetoFerias:3306/dbprojetoferias";
         String user = "root";
         String password = "";
         //conexao com  o banco
