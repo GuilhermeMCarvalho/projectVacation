@@ -28,19 +28,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        menuCadastro = new javax.swing.JMenu();
+        cadUsuarios = new javax.swing.JMenuItem();
+        cadTarefas = new javax.swing.JMenuItem();
+        menuLista = new javax.swing.JMenu();
+        listaTarefas = new javax.swing.JMenuItem();
+        menuPrioridades = new javax.swing.JMenu();
+        pontuarTarefas = new javax.swing.JMenuItem();
+        verPrioridades = new javax.swing.JMenuItem();
+        menuAjuda = new javax.swing.JMenu();
+        ajudaSobre = new javax.swing.JMenuItem();
+        ajudaManual = new javax.swing.JMenuItem();
+        menuOpcoes = new javax.swing.JMenu();
+        optSair = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PTASKUP - Prioritize Tasks Using Point 100");
@@ -57,67 +57,67 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGap(0, 681, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("Cadastro");
+        menuCadastro.setText("Cadastro");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem1.setText("Usuários");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        cadUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        cadUsuarios.setText("Usuários");
+        cadUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                cadUsuariosActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        menuCadastro.add(cadUsuarios);
 
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem2.setText("Tarefas");
-        jMenu1.add(jMenuItem2);
+        cadTarefas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        cadTarefas.setText("Tarefas");
+        menuCadastro.add(cadTarefas);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(menuCadastro);
 
-        jMenu2.setText("Listas");
+        menuLista.setText("Listas");
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem3.setText("Tarefas");
-        jMenu2.add(jMenuItem3);
+        listaTarefas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        listaTarefas.setText("Tarefas");
+        menuLista.add(listaTarefas);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(menuLista);
 
-        jMenu3.setText("Prioridades");
+        menuPrioridades.setText("Prioridades");
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem4.setText("Pontuar Tarefas");
-        jMenu3.add(jMenuItem4);
+        pontuarTarefas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        pontuarTarefas.setText("Pontuar Tarefas");
+        menuPrioridades.add(pontuarTarefas);
 
-        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem5.setText("Visualizar Prioridades");
-        jMenu3.add(jMenuItem5);
+        verPrioridades.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        verPrioridades.setText("Visualizar Prioridades");
+        menuPrioridades.add(verPrioridades);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(menuPrioridades);
 
-        jMenu4.setText("Ajuda");
+        menuAjuda.setText("Ajuda");
 
-        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem6.setText("Sobre");
-        jMenu4.add(jMenuItem6);
+        ajudaSobre.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        ajudaSobre.setText("Sobre");
+        menuAjuda.add(ajudaSobre);
 
-        jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem7.setText("Manual");
-        jMenu4.add(jMenuItem7);
+        ajudaManual.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        ajudaManual.setText("Manual");
+        menuAjuda.add(ajudaManual);
 
-        jMenuBar1.add(jMenu4);
+        jMenuBar1.add(menuAjuda);
 
-        jMenu5.setText("Opções");
+        menuOpcoes.setText("Opções");
 
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem8.setText("Sair");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        optSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        optSair.setText("Sair");
+        optSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                optSairActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem8);
+        menuOpcoes.add(optSair);
 
-        jMenuBar1.add(jMenu5);
+        jMenuBar1.add(menuOpcoes);
 
         setJMenuBar(jMenuBar1);
 
@@ -136,13 +136,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void cadUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadUsuariosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_cadUsuariosActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void optSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_optSairActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    }//GEN-LAST:event_optSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,20 +180,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem ajudaManual;
+    private javax.swing.JMenuItem ajudaSobre;
+    private javax.swing.JMenuItem cadTarefas;
+    private javax.swing.JMenuItem cadUsuarios;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem listaTarefas;
+    private javax.swing.JMenu menuAjuda;
+    private javax.swing.JMenu menuCadastro;
+    private javax.swing.JMenu menuLista;
+    private javax.swing.JMenu menuOpcoes;
+    private javax.swing.JMenu menuPrioridades;
+    private javax.swing.JMenuItem optSair;
+    private javax.swing.JMenuItem pontuarTarefas;
+    private javax.swing.JMenuItem verPrioridades;
     // End of variables declaration//GEN-END:variables
 }
