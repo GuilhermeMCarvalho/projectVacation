@@ -141,7 +141,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_cadUsuariosActionPerformed
 
     private void optSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_optSairActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_optSairActionPerformed
 
     /**
